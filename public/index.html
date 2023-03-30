@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <script type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+  </head>
+  <body class="bg-gradient-to-r bg-gradient-to-r from-slate-900 via-purple-600 to-slate-900">
+    <!-- <nav class="bg-gray-900 backdrop-blur-md py-3 px-4 w-full h-18 md:flex md:
+      md:justify-between">
+      <div class="flex justify-between items-center">
+        <span class="text-4xl text-green-600 font-semibold inline
+          opacity-100">
+          Kerala
+        </span>
+        <span class="text-gray-400 text-4xl cursor-pointer md:hidden
+          block mx-2 ">
+          <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
+        </span>
+      </div>
+      <ul class="md:flex md:items-center z-[-1] sm:z-auto md:static
+        absolute md:bg-transparent bg-gray-800 w-full left-0 md:w-auto
+        md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0
+        transition-all ease-in duration-500">
+        <li class="mx-1 my-6 rounded-lg md:my-0"><a href="#"
+            class="text-2xl text-gray-500
+            hover:text-fuchsia-400 hover:bg-gray-700 hover:
+            p-4 hover:rounded-lg duration-500 ">Home</a></li>
+        <li class="mx-1 my-6 md:my-0"><a href="#" class="text-2xl
+            text-gray-500 hover:text-fuchsia-400
+            hover:bg-gray-700 hover: p-4 hover:rounded-lg
+            duration-500">Destinations</a></li>
+        <li class="mx-1 my-6 md:my-0"><a href="#" class="text-2xl
+            text-gray-500 hover:text-fuchsia-400
+            hover:bg-gray-700 hover: p-4 hover:rounded-lg
+            duration-500">Stay</a></li>
+        <li class="mx-1 my-6 md:my-0"><a href="#" class="text-2xl
+            text-gray-500 hover:text-fuchsia-400
+            hover:bg-gray-700 hover: p-4 hover:rounded-lg
+            duration-500">Festivals</a></li>
+        <li class="mx-1 my-6 md:my-0"><a href="#" class="text-2xl
+            text-gray-500 hover:text-fuchsia-400
+            hover:bg-gray-700 hover: p-4 hover:rounded-lg
+            duration-500">To</a></li>
+        <li class="mx-1 my-6 md:my-0"><a href="#" class="text-2xl
+            text-gray-500 hover:text-fuchsia-400
+            hover:bg-gray-700 hover: p-4 hover:rounded-lg
+            duration-500">Gallery</a></li>
+        <li class="mx-1 my-6 md:my-0"><a href="#" class="text-2xl
+            text-gray-500 hover:text-fuchsia-400
+            hover:bg-gray-700 hover: p-4 hover:rounded-lg
+            duration-500">Contact</a></li>
+
+      </ul>
+    </nav> -->
+    <!-- nav -->
+    <!-- Component Start -->
+    <div class=" top-72 right-0 fixed z-40">
+      <div class="flex flex-col items-center w-7 hover:w-16 duration-500
+        h-[250px]
+        hover:h-[280px] overflow-hidden text-gray-400 backdrop-blur-3xl
+        bg-white/20 rounded-2xl ">
+        <a class="flex items-center justify-center mt-1 hover:bg-slate-400
+          hover:text-gray-300 w-10 h-10 hover:w-14 hover:h-14 duration-300
+          rounded-2xl text-xl
+          hover:text-3xl" href="#home">
+          <div class="text-black hover:text-white duration-200 "><i
+              class="fa-solid fa-house-chimney"></i></div>
+        </a>
+        <a class="flex items-center justify-center mt-1 hover:bg-slate-400
+          hover:text-gray-300 w-10 h-10 hover:w-14 hover:h-14 duration-300
+          rounded-2xl text-xl
+          hover:text-3xl" href="#fest">
+          <div class="text-black hover:text-white duration-200 "><i
+              class="fa-solid fa-tree"></i></div>
+        </a>
+        <div class="flex flex-col items-center">
+          <a class="flex items-center justify-center mt-1 hover:bg-slate-400
+            hover:text-gray-300 w-10 h-10 hover:w-14 hover:h-14 duration-300
+            rounded-2xl text-xl
+            hover:text-3xl" href="#dest">
+            <div class="text-black hover:text-white duration-200 "><i
+                class="fa-solid fa-map-location-dot"></i></div>
+          </a>
+          <a class="flex items-center justify-center mt-1 hover:bg-slate-400
+            hover:text-gray-300 w-10 h-10 hover:w-14 hover:h-14 duration-300
+            rounded-2xl text-xl
+            hover:text-3xl" href="#food">
+            <div class="text-black hover:text-white duration-200 "><i
+                class="fa-solid fa-utensils"></i></div>
+          </a>
+          <a class="flex items-center justify-center mt-1 hover:bg-slate-400
+            hover:text-gray-300 w-10 h-10 hover:w-14 hover:h-14 duration-300
+            rounded-2xl text-xl
+            hover:text-3xl" href="#art">
+            <div class="text-black hover:text-white duration-200 "><i
+                class="fa-solid fa-palette"></i></div>
+          </a>
+          <a class="flex items-center justify-center mt-1 hover:bg-slate-400
+            hover:text-gray-300 w-10 h-10 hover:w-14 hover:h-14 duration-300
+            rounded-2xl text-xl
+            hover:text-3xl" href="#contact">
+            <div class="text-black hover:text-white duration-200 "><i
+                class="fa-solid fa-address-book"></i></div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Component End  -->
+    <!-- nav -->
+    <main id="home" class="">
+      <div class="w-full sm:h-90 h-auto bg-gradient-to-r from-cyan-900 via-purple-600 to-blue-900 sm:flex ">
+        <div class=" my-0 relative">
+
+          <img id="hills" class="sm:h-screen h-100 "
+            src="./images/hills.jpg" alt=""
+            srcset="" style="clip-path: polygon(0 0, 100% 0, 70% 100%, 0%
+            100%);">
+        </div>
+        <div class="md:max-w-2xl max-w-3xl text-purple-300 hover:text-blue-400
+          duration-500 sm:text-8xl text-[46px] antialiased font-bold
+          items-center
+          sm:mt-40 mt-5 sm:mr-30 sm:px-0 px-2 sm:py-0 py-5 mr-5">
+          God's Own Country
+          <p class="sm:text-3xl text-sm sm:mt-40 my-10 sm:p-0 p-10
+          hover:text-cyan-400
+            text-gray-100 duration-500 mr-8">Popular as 'God's Own Country'
+            Kerala is a haven for travellers who come here to unwind in the
+            salubrious climes, away from the concrete jungle.</p>
+          <div class=" hover:text-amber-600 text-red-600
+          hover:bg-gray-700 bg-slate-900
+            duration-500 sm:text-4xl text-2xl font-bold text-center
+            sm:mt-40 mt-5 sm:py-5 py-2 sm:ml-0 ml-4 mb-10 rounded-2xl
+            justify-center
+            ">
+            <a href="#fest">Explore KERALA</a>
+          </div>
+
+        </div>
+      </div>
+      <div>
+        <div id="fest" class="text-center text-orange-700 sm:text-6xl text-3xl
+          sm:p-16 p-3
+          pb-5 font-bold">Festivals</div>
+        <!-- card 1 -->
+        <div class="sm:flex block">
+          <div href="#" class="group relative .block bg-black sm:w-[500px]
+            h-[800px]">
+            <img
+              alt="Developer"
+              src="https://i0.wp.com/www.manishjaishree.com/wp-content/uploads/2017/10/IMG_3995.jpg?ssl=1"
+              class="absolute inset-0 h-full w-100 object-cover opacity-95
+              transition-opacity group-hover:opacity-50"
+              />
+
+            <div class="relative p-4 sm:p-6 lg:p-4 w-60">
+              <p class="text-4xl font-semibold uppercase tracking-widest
+                text-pink-500">
+                Onam
+              </p>
+
+              <p class="text-sm font-normal text-white ">Official state festival</p>
+              <div class="mt-32 sm:mt-48 lg:mt-64">
+                <div
+                  class="translate-y-8 transform opacity-0 transition-all
+                  group-hover:translate-y-0 group-hover:opacity-100">
+                  <p class="text-lg text-white w-72">
+                    Onam! The national festival of Kerala celebrated for the
+                    coming of the King Mahabali. This festival falls in
+                    August-September and has a wonderful story attached to it.
+                    Onam is a very important festival to the people of Kerala
+                    and
+                    has been celebrated in a grand manner every year.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div href="#" class="group relative .block bg-black sm:w-[500px]
+            h-[800px]">
+            <img
+              alt="Developer"
+              src="https://w0.peakpx.com/wallpaper/22/962/HD-wallpaper-vishu-autumn-one.jpg"
+              class="absolute inset-0 h-full w-100 object-cover opacity-75
+              transition-opacity group-hover:opacity-50"
+              />
+
+            <div class="relative p-4 sm:p-6 lg:p-4 w-full">
+              <p class="text-4xl font-semibold uppercase tracking-widest
+                text-pink-500">
+                Vishu
+              </p>
+
+              <p class="text-sm font-normal text-white ">Start of the Malayalam
+                new year</p>
+              <div class="mt-32 sm:mt-48 lg:mt-64">
+                <div
+                  class="translate-y-8 transform opacity-0 transition-all
+                  group-hover:translate-y-0 group-hover:opacity-100">
+                  <p class="text-lg text-white w-72">
+                    Vishu (Sanskrit: “equal”) celebrates the vernal equinox,
+                    when
+                    day and night are roughly equal length. Although the
+                    astronomical equinox falls in late March, the Vishu festival
+                    falls on the first day of the Malayali month of Medam, which
+                    occurs on either April 14 or 15 on the Gregorian calendar.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div href="#" class="group relative .block bg-black sm:w-[500px]
+            h-[800px]">
+            <img
+              alt="Developer"
+              src="https://wallpapercave.com/wp/wp8050512.jpg"
+              class="absolute inset-0 h-full w-100 object-cover opacity-75
+              transition-opacity group-hover:opacity-50"
+              />
+
+            <div class="relative p-4 sm:p-6 lg:p-4 w-full">
+              <p class="text-4xl font-semibold uppercase tracking-widest
+                text-pink-500">
+                Thrissur Pooram
+              </p>
+
+              <p class="text-sm font-normal text-white ">Festival of festivals
+                in
+                Kerala</p>
+              <div class="mt-32 sm:mt-48 lg:mt-64">
+                <div
+                  class="translate-y-8 transform opacity-0 transition-all
+                  group-hover:translate-y-0 group-hover:opacity-100">
+                  <p class="text-lg text-white w-72">
+                    A resplendent festival celebrated with a grand display of
+                    caparisoned elephants, dazzling parasols, and percussion
+                    music, the It is held at the Vadakkunnathan Temple in
+                    Thrissur
+                    every year on the Pooram day—the day when the moon rises
+                    with
+                    the Pooram star in the Malayalam Calendar month of Medam.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div href="#" class="group relative .block bg-black sm:w-[500px]
+            h-[800px]">
+            <img
+              alt="Developer"
+              src="https://wallpapercave.com/wp/wp10070844.jpg"
+              class="absolute inset-0 h-full w-100 object-cover opacity-75
+              transition-opacity group-hover:opacity-50"
+              />
+
+            <div class="relative p-4 sm:p-6 lg:p-4 w-full">
+              <p class="text-4xl font-semibold uppercase tracking-widest
+                text-pink-500">
+                Vallam kali
+              </p>
+
+              <p class="text-sm font-normal text-white ">Kerala Boat Festival</p>
+              <div class="mt-32 sm:mt-48 lg:mt-64">
+                <div
+                  class="translate-y-8 transform opacity-0 transition-all
+                  group-hover:translate-y-0 group-hover:opacity-100">
+                  <p class="text-lg text-white w-72">
+                    Not only the state has a pristine coastline, but the
+                    legendary
+                    Kerala Backwater also makes the state glitter. Kerala
+                    backwater meanders through the state, fed by lakes, rivers,
+                    and the Arabian Sea. This proximity has led to the
+                    introduction of new games and festivals. Kerala Boat
+                    Festival
+                    is the epitome of team spirit. Not just the sight of the
+                    race,
+                    but also far beyond the venues of races, you can see the
+                    enthusiasm in the people to attend it and cheer. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sm:flex block">
+          <div href="#" class="group relative .block bg-black sm:w-[500px]
+            h-[800px]">
+            <img
+              alt="Developer"
+              src="https://files.prokerala.com/news/photos/imgs/800/sweet-pongal-being-cooked-inside-earthen-pots-on-635045.jpg"
+              class="absolute inset-0 h-full w-100 object-cover opacity-75
+              transition-opacity group-hover:opacity-50"
+              />
+
+            <div class="relative p-4 sm:p-6 lg:p-4 w-full">
+              <p class="text-4xl font-semibold uppercase tracking-widest
+                text-pink-500">
+                Attukal Pongala
+              </p>
+
+              <p class="text-sm font-normal text-white ">Harvest festival of
+                Kerala</p>
+              <div class="mt-32 sm:mt-48 lg:mt-64">
+                <div
+                  class="translate-y-8 transform opacity-0 transition-all
+                  group-hover:translate-y-0 group-hover:opacity-100">
+                  <p class="text-lg text-white w-72">
+                    Attukal Pongala is a ten-day festival and takes place in
+                    February/March. During these ten days, an idol of the
+                    Goddess
+                    Attukal Devi is decorated and worshipped. This is a famous
+                    temple festival that takes place mainly in Trivandrum. And
+                    not
+                    just in Trivandrum, faith and enthusiasm are equally sprung
+                    across the state.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div href="#" class="group relative .block bg-black sm:w-[500px]
+            h-[800px]">
+            <img
+              alt="Developer"
+              src="https://www.rd.com/wp-content/uploads/2016/10/03_secrets_christmas_tree_wishes_knew_feeding_Gajus.jpg"
+              class="absolute inset-0 h-full w-full object-cover opacity-85
+              transition-opacity group-hover:opacity-50"
+              />
+
+            <div class="relative p-4 sm:p-6 lg:p-4 w-full">
+              <p class="text-4xl font-semibold uppercase tracking-widest
+                text-pink-500">
+                Christmas
+              </p>
+
+              <p class="text-sm font-normal text-white "> Birth of Jesus Christ</p>
+              <div class="mt-32 sm:mt-48 lg:mt-64">
+                <div
+                  class="translate-y-8 transform opacity-0 transition-all
+                  group-hover:translate-y-0 group-hover:opacity-100">
+                  <p class="text-lg text-white w-72">
+                    In the state of Kerala, where Christians account for over a
+                    quarter of the population, Christmas holds a strong
+                    position.
+                    With festivities ranging from shopping and tree decorations
+                    to
+                    carols and feast, Christmas is definitely one of the most
+                    celebrated festivals in Kerala. The festival marks the birth
+                    of Jesus Christ.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div href="#" class="group relative .block bg-black sm:w-[500px]
+            h-[800px]">
+            <img
+              alt="Developer"
+              src="https://static.officeholidays.com/images/1280x853c/maha_shivrati.jpg"
+              class="absolute inset-0 h-full w-100 object-cover opacity-75
+              transition-opacity group-hover:opacity-50"
+              />
+
+            <div class="relative p-4 sm:p-6 lg:p-4 w-60">
+              <p class="text-4xl font-semibold uppercase tracking-widest
+                text-pink-500">
+                Shivarathri
+              </p>
+
+              <p class="text-sm font-normal text-white ">Homage To The Lord
+              </p>
+              <div class="mt-32 sm:mt-48 lg:mt-64">
+                <div
+                  class="translate-y-8 transform opacity-0 transition-all
+                  group-hover:translate-y-0 group-hover:opacity-100">
+                  <p class="text-lg text-white w-72">
+                    Amongst all the festivals of Kerala, this is one of those
+                    festivals that reflect the richness of religious aspect of
+                    Kerala. Like all the festivals in Kerala, this one too is
+                    celebrated with utmost enthusiasm and is therefore counted
+                    amongst the most significant ones. The grandiose of this
+                    festival can be seen on the Periyar river banks.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div href="#" class="group relative .block bg-black sm:w-[500px]
+            h-[800px]">
+            <img
+              alt="Developer"
+              src="https://i.ytimg.com/vi/3W141G_UqXg/maxresdefault.jpg"
+              class="absolute inset-0 h-full w-100 object-cover opacity-75
+              transition-opacity group-hover:opacity-50"
+              />
+
+            <div class="relative p-4 sm:p-6 lg:p-4 w-full">
+              <p class="text-4xl font-semibold uppercase tracking-widest
+                text-pink-500">
+                Adoor Gajamela
+              </p>
+
+              <p class="text-sm font-normal text-white "> Elephant fair</p>
+              <div class="mt-32 sm:mt-48 lg:mt-64">
+                <div
+                  class="translate-y-8 transform opacity-0 transition-all
+                  group-hover:translate-y-0 group-hover:opacity-100">
+                  <p class="text-lg text-white w-72">
+                    Adoor Gajamela is a ten days annual festival that is a
+                    widely
+                    famous elephant procession. Innumerable people come to the
+                    temple to witness this incredible spectacle where nine
+                    elephants are adorned in traditional Kerala style. The major
+                    highlight of this festival is that the nine elephants get a
+                    chance to compete with each other for the title 'Gajaraja
+                    Pattam
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center
+        antialiased
+        ">
+        <div class="py-10 text-orange-700 sm:text-6xl text-3xl sm:p-16 p-3 pb-5
+          font-bold">Destinations</div>
+        <!-- carosuel -->
+        <style>
+          .mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img
+              src="./images/green-tea-plantations-munnar-kerala-india_163782-3906.avif"
+              style="width:100%">
+            <!-- <div class="text">Caption Text</div> -->
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="./images/hills.jpg" style="width:100%">
+            <!-- <div class="text">Caption Two</div> -->
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="./images/hills.jpg" style="width:100%">
+            <!-- <div class="text">Caption Three</div> -->
+          </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center;display: none; ">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+
+        <script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+</script>
+        <!-- styling -->
+        <!-- cards -->
+        <div class=" sm:flex block sm:py-0 pt-40 justify-between sm:mt-[-1250px]
+          mt-[1] sm:m-5">
+          <div id="dest" class="backdrop-blur-xl bg-white/30 h-[560px]
+            sm:hover:h-[580px] max-w-[520px] sm:hover:max-w-[630px] p-2
+            rounded-2xl sm:text-4xl
+            text-3xl text-blue-600 font-bold justify-items-center mx-3 z-10
+            sm:mb-0 mb-10 drop-shadow-lg duration-300">
+            Kerala Backwaters <br>
+            <img class="w-full sm:h-[320px] sm:hover:h-[400px] rounded-2xl m-0
+              p-2 duration-300" src="images/kerala_backwater.jpg"
+              alt="">
+            <p class="text-center sm:text-base text-lg sm:hover:text-2xl
+              duration-300 text-slate-600">The scenic backwaters of Kerala
+              comprise a serene stretch of lakes, canals and lagoons located
+              parallel to the coast of the Arabian Sea.The backwaters have a
+              unique ecosystem: freshwater from the rivers meets the seawater
+              from the Arabian Sea. <br>
+            </p>
+          </div>
+          <div id="dest" class="backdrop-blur-xl bg-white/30 h-[560px]
+            sm:hover:h-[580px] max-w-[520px] sm:hover:max-w-[630px] p-2
+            rounded-2xl sm:text-4xl
+            text-3xl text-green-600 font-bold justify-items-center mx-3 z-10
+            sm:mb-0 mb-10 drop-shadow-lg duration-300">
+            Tea Gardens <br>
+            <img class="w-full sm:h-[320px] sm:hover:h-[400px] rounded-2xl m-0
+              p-2 duration-300"
+              src="images/green-tea-plantations-munnar-kerala-india_163782-3906.avif"
+              alt="">
+            <p class="text-center sm:text-base text-lg sm:hover:text-2xl
+              duration-300 text-slate-600">The resplendent tea plantations in
+              Munnar are like a slice of haven plucked from the skies above.
+              Perched at several feet over the sea level and boasting of misty
+              skies above and green carpeted fields below, these splendid Tea
+              gardens in Munnar are a must-visit for every traveller.<br>
+            </p>
+          </div>
+          <div id="dest" class="backdrop-blur-xl bg-white/30 h-[560px]
+            sm:hover:h-[580px] max-w-[520px] sm:hover:max-w-[630px] p-2
+            rounded-2xl sm:text-4xl
+            text-3xl text-yellow-600 font-bold justify-items-center mx-3 z-10
+            sm:mb-0 mb-10 drop-shadow-lg duration-300">
+            Varkala Beach <br>
+            <img class="w-full sm:h-[320px] sm:hover:h-[400px] rounded-2xl m-0
+              p-2 duration-300" src="images/varkkala cliff.webp"
+              alt="">
+            <p class="text-center sm:text-base text-lg sm:hover:text-2xl
+              duration-300 text-slate-600">The Varkala Beach,10 kms away from
+              Varkala, is renowned for a natural spring. Which is considered to
+              have medicinal and curative properties. A dip in the holy waters
+              at this beach is believed to purge the body of impurities and the
+              soul of all sins; hence the name 'Papanasam Beach'.<br>
+            </p>
+          </div>
+        </div>
+        <!-- card -2 -->
+        <div class=" sm:flex block sm:py-0 sm:pt-4 justify-between
+          mt-[1] sm:m-5">
+          <div id="dest" class="backdrop-blur-xl bg-white/30 h-[560px]
+            sm:hover:h-[580px] max-w-[520px] sm:hover:max-w-[630px] p-2
+            rounded-2xl sm:text-4xl
+            text-3xl text-neutral-800 font-bold justify-items-center mx-3 z-10
+            sm:mb-0 mb-10 drop-shadow-lg duration-300">
+            Athirapally Falls <br>
+            <img class="w-full sm:h-[320px] sm:hover:h-[400px] rounded-2xl m-0
+              p-2 duration-300" src="images/athirapally.jpg"
+              alt="">
+            <p class="text-center sm:text-base text-lg sm:hover:text-2xl
+              duration-300 text-slate-600"> Athirapally Falls is a marvellous
+              cascade of frothy waters that makes its way from the Anamudi
+              mountains of the Western Ghats.It is often referred to as the
+              "Niagara Falls of India". It creates a spectacular vista of
+              scintillating water, emerald jungles and azure sky.<br>
+            </p>
+          </div>
+          <div id="dest" class="backdrop-blur-xl bg-white/30 h-[560px]
+            sm:hover:h-[580px] max-w-[520px] sm:hover:max-w-[630px] p-2
+            rounded-2xl sm:text-4xl
+            text-3xl text-emerald-300 font-bold justify-items-center mx-3 z-10
+            sm:mb-0 mb-10 drop-shadow-lg duration-300">
+            Jew Town <br>
+            <img class="w-full sm:h-[320px] sm:hover:h-[400px] rounded-2xl m-0
+              p-2 duration-300" src="images/jew-town_large.jpg"
+              alt="">
+            <p class="text-center sm:text-base text-lg sm:hover:text-2xl
+              duration-300 text-slate-600">Jew Town,is a favourite haunt of
+              antique hunters. Each of the shops here contains beautiful items
+              with quirky and interesting stories.They are like fractions of
+              history, waiting for the right person to finally claim them.<br>
+            </p>
+          </div>
+          <div id="dest" class="backdrop-blur-xl bg-white/30 h-[560px]
+            sm:hover:h-[580px] max-w-[520px] sm:hover:max-w-[630px] p-2
+            rounded-2xl sm:text-4xl
+            text-3xl text-slate-400 font-bold justify-items-center mx-3 z-10
+            sm:mb-0 mb-10 drop-shadow-lg duration-300">
+            Jadayu Para <br>
+            <img class="w-full sm:h-[320px] sm:hover:h-[400px] rounded-2xl m-0
+              p-2 duration-300" src="images/jatayu para.webp"
+              alt="">
+            <p class="text-center sm:text-base text-lg sm:hover:text-2xl
+              duration-300 text-slate-700">The world’s largest bird
+              sculpture.Legend has it that Jatayu tried to save Sita (wife of
+              Lord Rama) when Ravana, a demon king, was abducting her in his
+              airborne chariot. Jatayu is said to have fought valiantly and
+              fallen on these rocks, grievously injured.<br>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div id="food" class=" sm:mt-[450px] mt-3" style="background-image:
+      url(https://wallpaperaccess.com/full/1635203.jpg);background-attachment:
+      fixed;">
+      <div class="text-center text-orange-700 sm:text-6xl text-3xl sm:p-16
+        p-3
+        font-bold">Kerala Cuisine</div>
+      <div class="sm:grid grid-cols-4 gap-11 place-content-center w-full
+        mt-[-10px] px-7 ">
+        <!-- food cards -->
+        <div class=" max-w-md max-h-full bg-white border border-gray-200
+          rounded-lg
+          shadow dark:bg-gray-800 dark:border-gray-700 sm:mb-0 mb-6">
+          <a href="#">
+            <img class="rounded-t-lg w-[426px] h-60"
+              src="https://escapeartistkatie.com/wp-content/uploads/2022/05/sadya.jpg"
+              alt="" />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900
+                dark:text-white">Ela Sadhya</h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">The
+              Sadya is the traditional vegetarian feast of Kerala. Usually
+              served as lunch, it consists of par boiled pink rice, side dishes,
+              savouries, pickles and desserts spread out on a plantain leaf.
+              Tradition insists that the tapering end of the plantain leaf
+              should point to the left of the seated guest.</p>
+
+          </div>
+        </div>
+
+
+        <div class=" max-w-md bg-white border border-gray-200 rounded-lg
+          shadow dark:bg-gray-800 dark:border-gray-700 sm:mb-0 mb-6">
+          <a href="#">
+            <img class="rounded-t-lg w-[426px] h-60"
+              src="https://www.keralatourism.org/images/cuisine/large/Puttu_and_Kadala_Curry20131126123929_43_1.jpg"
+              alt="" />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900
+                dark:text-white">Puttu and Kadala Curry</h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">A
+              famous breakfast recipe out of the many Kerala dishes, Puttu is a
+              cylindrical steamed rice cake that is cooked in a mould with
+              grated coconut. It can be served with ripe bananas, grated
+              coconut, and kadala curry (the Keralite version of ‘Kala Chana’!)
+              Don’t be fooled by the simple appearance of this dish; Puttu can
+              be very flavoursome!</p>
+
+          </div>
+        </div>
+
+        <div class=" max-w-md bg-white border border-gray-200 rounded-lg
+          shadow dark:bg-gray-800 dark:border-gray-700 sm:mb-0 mb-6">
+          <a href="#">
+            <img class="rounded-t-lg w-[426px] h-60"
+              src="https://www.manoramaonline.com/content/dam/mm/mo/pachakam/recipes/images/2020/8/10/idiyappam-lefrover-rice.jpg"
+              alt="" />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900
+                dark:text-white">Idiyappam With Curry</h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">A.K.A
+              Noolappam in Kerala cuisine, Idiyappam, food of Kerala, is made of
+              rice flour, salt and water with a number of thin strands or sevai
+              entwined together to make the lovely texture that this dish bears.
+              It is this texture that makes it versatile. You can have it with
+              all kinds of curries, but it tastes best with Egg Curry.</p>
+          </div>
+        </div>
+        <div class=" max-w-md bg-white border border-gray-200 rounded-lg
+          shadow dark:bg-gray-800 dark:border-gray-700 sm:mb-0 mb-6">
+          <a href="#">
+            <img class="rounded-t-lg w-[426px] h-60"
+              src="./images/pepper-delight-chicken-stew-2.jpg"
+              alt="" />
+
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900
+                dark:text-white">Appam With Ishtu (Stew)</h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">These
+              crepe-like bowls are best enjoyed with Ishtu, a kind of stew that
+              has been originally derived from the European stew and is made
+              from coconut milk, cinnamon, cloves and shallots, and sometimes
+              also mango pieces and vegetables. The aroma of spices with the
+              sweet fragrance of coconut milk is enough to lure foodies to the
+              kitchen!</p>
+
+          </div>
+        </div>
+        <div class=" max-w-md bg-white border border-gray-200 rounded-lg
+          shadow dark:bg-gray-800 dark:border-gray-700 sm:mb-0 mb-6">
+          <a href="#">
+            <img class="rounded-t-lg w-[426px] h-60"
+              src="https://maduraivirundhu.com/wp-content/uploads/2021/08/Plain-Dosa-1.jpeg"
+              alt="" />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900
+                dark:text-white">Dosa Ghee Roast With Sambar</h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Listed
+              among the ‘World’s 50 Most Delicious Foods’, dosa and sambar in
+              Kerala cuisine make up for a deadly combination! Made from
+              fermented rice and lentils, the ghee roast dosa is first cooked to
+              perfection in pure ghee, and then roasted till it gets as crisp as
+              it can. It is, no doubt, the best food in Kerala district.</p>
+          </div>
+        </div>
+        <div class=" max-w-md bg-white border border-gray-200 rounded-lg
+          shadow dark:bg-gray-800 dark:border-gray-700 sm:mb-0 mb-6">
+          <a href="#">
+            <img class="rounded-t-lg w-[426px] h-60"
+              src="https://i0.wp.com/www.pepperdelight.com/wp-content/uploads/2016/07/pepper-delight-dry-roasted-chicken-4.jpg?resize=5870%2C3849"
+              alt="" />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900
+                dark:text-white">Nadan Kozhi Varuthathu</h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Served
+              with onion, spices, garlic, and vinegar on a banana leaf, Nadan
+              Kozhi Varuthathu is fried chicken made with a generous amount of
+              spices.It also serves as a popular street food in the list of
+              Kerala dishes served with dosa. Have Nadan Kozhi Varuthathu on
+              your next trip to Kerala and you’ll forget KFC for sure!</p>
+          </div>
+        </div>
+        <div class=" max-w-md bg-white border border-gray-200 rounded-lg
+          shadow dark:bg-gray-800 dark:border-gray-700 sm:mb-0 mb-6">
+          <a href="#">
+            <img class="rounded-t-lg w-[426px] h-60"
+              src="https://ichef.bbci.co.uk/food/ic/food_16x9_832/recipes/keralan_prawn_curry_45390_16x9.jpg"
+              alt="" />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900
+                dark:text-white">Kerala Style Prawn Curry</h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">The
+              traditional prawn curry of Kerala is sprinkled religiously with
+              chilli and pepper, other than salt and turmeric, and is then
+              cooked in whole coconut milk and jaggery before it is finally
+              garnished with curry leaves. In fact, trying this exotic seafood
+              dish is one of the best things to do in Kerala. One can have it
+              hot with steaming rice or chapattis for a trip to heaven!</p>
+          </div>
+        </div>
+        <div class=" max-w-md bg-white border border-gray-200 rounded-lg
+          shadow dark:bg-gray-800 dark:border-gray-700 sm:mb-0 mb-6">
+          <a href="#">
+            <img class="rounded-t-lg w-[426px] h-60"
+              src="https://im1.dineout.co.in/images/uploads/restaurant/sharpen/1/k/f/p110336-1669125886637cd6fe48a4e.jpg?tr=tr:n-xlarge"
+              alt="" />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900
+                dark:text-white">Karimeen Pollichathu (Fish)</h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Karimeen
+              Pollichathu is a dish made out of the Pearl Spot Fish, a speckled
+              fish commonly found in the backwaters of this Alleppey and
+              Kumarakom. Karimeen Pollichathu is originally a Syrian Christian
+              delicacy but has now become part of the rich Kerala cuisine.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div id="art" class="text-center text-orange-700 sm:text-6xl text-5xl
+        sm:p-16 p-3
+        pb-5 font-bold">Art & Culture</div>
+      <div>
+        <!-- cards -->
+        <div class="flex justify-center">
+          <div
+            class="flex flex-col rounded-xl backdrop-blur-2xl bg-white/40
+            shadow-lg md:max-w-[1400px] md:flex-row">
+            <img
+              class="h-[480px] w-full rounded-t-xl object-cover md:w-[400px]
+              hover:w-[600px] duration-300 md:rounded-none md:rounded-l-xl"
+              src="https://www.ekeralatourism.net/wp-content/uploads/2019/01/fest2.jpg"
+              alt="" />
+            <div class="flex flex-col justify-start p-10">
+              <h5
+                class="mb-2 text-4xl font-semibold dark:text-neutral-700">
+                Kathakali
+              </h5>
+              <p class="mb-4 text-2xl text-neutral-600 dark:text-neutral-200
+                pt-10">
+                Kathakali is an evolved dance form popular in the South Indian
+                state of Kerala. This Indian classical dance involves
+                storytelling activities through fascinating footwork and
+                expressive gestures of face and hands accompanied by music and
+                vocal performance.
+              </p>
+            </div>
+          </div>
+        </div>
+        <br> <br>
+        <!-- cards 2 -->
+        <div class="flex justify-center">
+          <div
+            class="flex flex-col rounded-xl backdrop-blur-2xl bg-white/40
+            shadow-lg md:max-w-[1400px] md:flex-row">
+            <img
+              class="h-[480px] w-full rounded-t-xl object-cover md:w-[400px]
+              hover:w-[600px] duration-300 md:rounded-none md:rounded-l-xl"
+              src="https://static.theprint.in/wp-content/uploads/2023/01/Feature-Image-82.jpg"
+              alt="" />
+            <div class="flex flex-col justify-start p-10">
+              <h5
+                class="mb-2 text-4xl font-semibold dark:text-neutral-700">
+                Theyyam
+              </h5>
+              <p class="mb-4 text-2xl text-neutral-600 dark:text-neutral-200
+                pt-10">
+                It is here that our legends truly come to life. Theyyam is a
+                famous ritual art form that originated in North Kerala which
+                brings to life the great stories of our State. It encompasses
+                dance, mime and music. It exalts the beliefs of the ancient
+                tribals who gave a lot of importance to the worship of heroes
+                and the spirits of their ancestors.
+              </p>
+            </div>
+          </div>
+        </div>
+        <br> <br>
+        <div class="flex justify-center">
+          <div
+            class="flex flex-col rounded-xl backdrop-blur-2xl bg-white/40
+            shadow-lg md:max-w-[1400px] md:flex-row">
+            <img
+              class="h-[480px] w-full rounded-t-xl object-cover md:w-[400px]
+              hover:w-[600px] duration-300 md:rounded-none md:rounded-l-xl"
+              src="https://www.dharmikam.com/wp-content/uploads/2022/06/DSC06011-01-1-02-e1654592745110.jpeg"
+              alt="" />
+            <div class="flex flex-col justify-start p-10">
+              <h5
+                class="mb-2 text-4xl font-semibold dark:text-neutral-700">
+                Kalaripayattu
+              </h5>
+              <p class="mb-4 text-2xl text-neutral-600 dark:text-neutral-200
+                pt-10">
+                Kalaripayattu is considered one of the most ancient martial arts
+                in the world. The fighting form indigenous to the Gods Own
+                Country, is popularly known as the mother of martial arts. The
+                term Kalaripayattu is derived from two words – “Kalari” meaning
+                place of exercise or gymnasium and “payattu” meaning to fight or
+                exercise.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <br> <br>
+        <div class="flex justify-center">
+          <div
+            class="flex flex-col rounded-xl backdrop-blur-2xl bg-white/40
+            shadow-lg md:max-w-[1400px] md:flex-row">
+            <img
+              class="h-[480px] w-full rounded-t-xl object-cover md:w-[400px]
+              hover:w-[600px] duration-300 md:rounded-none md:rounded-l-xl"
+              src="https://www.keralatourism.org/images/picture/hri/Pulikali_during_Onam_festival_celebrations_in_Kerala_2634.JPG"
+              alt="" />
+            <div class="flex flex-col justify-start p-10">
+              <h5
+                class="mb-2 text-4xl font-semibold dark:text-neutral-700">
+                Pulikali
+              </h5>
+              <p class="mb-4 text-2xl text-neutral-600 dark:text-neutral-200
+                pt-10">
+                Pulikali (Tiger Dance) is one among the folk art forms of
+                Kerala. On the fourth day of Onam festival, artists paint their
+                bodies like tigers with stripes of yellow, red and black and
+                dance to the rhythm of traditional percussion instruments such
+                as thakil, udukku and chenda.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <br> <br>
+        <div class="flex justify-center">
+          <div
+            class="flex flex-col rounded-xl backdrop-blur-2xl bg-white/40
+            shadow-lg md:max-w-[1400px] md:flex-row">
+            <img
+              class="h-[480px] w-full rounded-t-xl object-cover md:w-[400px]
+              hover:w-[600px] duration-300 md:rounded-none md:rounded-l-xl"
+              src="https://www.keralatourism.org/images/artforms/large/thiruvathirakali_dance20190904055814_21_1.jpg"
+              alt="" />
+            <div class="flex flex-col justify-start p-10">
+              <h5
+                class="mb-2 text-4xl font-semibold dark:text-neutral-700">
+                Thiruvathirakali
+              </h5>
+              <p class="mb-4 text-2xl text-neutral-600 dark:text-neutral-200
+                pt-10">
+                Thiruvathirakali or Kaikottikaliis a unique dance performed in
+                Kerala on the auspicious day of Thiruvathira, the birthday of
+                Lord Shiva. It is performed by women who seek blessings for
+                eternal marital bliss. It falls in the Malayalam month of Dhanu
+                (December-January).
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <br> <br>
+        <div class="flex justify-center">
+          <div
+            class="flex flex-col rounded-xl backdrop-blur-2xl bg-white/40
+            shadow-lg md:max-w-[1400px] md:flex-row">
+            <img
+              class="h-[480px] w-full rounded-t-xl object-cover md:w-[400px]
+              hover:w-[600px] duration-300 md:rounded-none md:rounded-l-xl"
+              src="https://www.keralatourism.org/images/picture/large/Chakyarkoothu_1799.jpg"
+              alt="" />
+            <div class="flex flex-col justify-start p-10">
+              <h5
+                class="mb-2 text-4xl font-semibold dark:text-neutral-700">
+                Chakyarkoothu
+              </h5>
+              <p class="mb-4 text-2xl text-neutral-600 dark:text-neutral-200
+                pt-10">
+                Chakyar Koothu is a performance art from Kerala, India. It is
+                primarily a type of highly refined monologue where the performer
+                narrates episodes from Hindu epics (such as the Ramayana and the
+                Mahabharata) and stories from the Puranas.
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+    <br><br><br>
+    <!-- footer -->
+    <!-- component -->
+    <footer id="contact" class="relative py-20 flex flex-col items-center bg-cyan-900
+      overflow-hidden md:py-16">
+      <div class="text-gray-100 z-[2] pb-8 text-2xl text-blue-400 font-semibold">Kerala</div>
+      <div class="relative z-[1] container m-auto px-6 md:px-12">
+        <div class="m-auto md:w-10/12 lg:w-8/12 xl:w-6/12">
+          <div class="flex flex-wrap items-center justify-between
+            md:flex-nowrap">
+            <div class="w-full space-x-12 flex justify-center text-gray-300
+              sm:w-7/12 md:justify-start">
+              <ul class="list-disc list-inside space-y-8">
+                <!-- <li><a href="#" class="hover:text-sky-400 transition">Home</a></li>
+
+                        <li><a href="#" class="hover:text-sky-400 transition">About</a></li>
+                        <li><a href="#" class="hover:text-sky-400 transition">Guide</a></li>
+                        <li><a href="#" class="hover:text-sky-400 transition">Blocks</a></li>
+                        <li><a href="#" class="hover:text-sky-400 transition">Contact</a></li>
+                        <li><a href="#" class="hover:text-sky-400 transition">Terms of Use</a></li> -->
+              </ul>
+
+              <ul role="list" class="space-y-8">
+                <li>
+                  <a href="#" class="flex items-center space-x-3
+                    hover:text-sky-400 transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                      class="w-5" viewBox="0 0 16 16">
+                      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47
+                        7.59.4.07.55-.17.55-.38
+                        0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01
+                        1.08.58 1.23.82.72 1.21 1.87.87
+                        2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95
+                        0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0
+                        .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27
+                        1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08
+                        2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65
+                        3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0
+                        .21.15.46.55.38A8.012 8.012 0 0 0 16
+                        8c0-4.42-3.58-8-8-8z"/>
+                      </svg>
+                      <span>Github</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex items-center space-x-3
+                      hover:text-sky-400 transition">
+                      <svg xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" class="w-5" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002
+                          3.603-.002 8.05c0 4.017 2.926 7.347 6.75
+                          7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131
+                          3.022-3.131.876 0 1.791.157
+                          1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303
+                          1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604
+                          6.75-3.934 6.75-7.951z"/>
+                        </svg>
+                        <span>Facebook</span>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="flex items-center space-x-3
+                        hover:text-sky-400 transition">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor" class="w-5" viewBox="0 0 16 16">
+                          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088
+                            3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927
+                            3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01
+                            5.555 0 5.827 0 8.001c0 2.172.01 2.444.048
+                            3.297.04.852.174 1.433.372 1.942.205.526.478.972.923
+                            1.417.444.445.89.719 1.416.923.51.198 1.09.333
+                            1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01
+                            3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916
+                            3.916 0 0 0
+                            1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99
+                            10.445 16 10.173 16
+                            8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926
+                            3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0
+                            13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01
+                            10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0
+                            2.389.007 3.232.046.78.035 1.204.166
+                            1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275
+                            1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047
+                            3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0
+                            1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478
+                            2.478 0 0 1-.92-.598 2.48 2.48 0 0
+                            1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233
+                            0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24
+                            1.485-.276.738-.034 1.024-.044
+                            2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0
+                            1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1
+                            0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667
+                            2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                          </svg>
+                          <span>Instagram</span>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center space-x-3
+                          hover:text-sky-400 transition">
+                          <svg xmlns="http://www.w3.org/2000/svg" x="0px"
+                            y="0px"
+                            width="20" height="20"
+                            viewBox="0,0,256,256"
+                            style="fill:#000000;">
+                            <g fill="#ffffff" fill-rule="nonzero" stroke="none"
+                              stroke-width="1" stroke-linecap="butt"
+                              stroke-linejoin="miter" stroke-miterlimit="10"
+                              stroke-dasharray="" stroke-dashoffset="0"
+                              font-family="none" font-weight="none"
+                              font-size="none" text-anchor="none"
+                              style="mix-blend-mode: normal"><g
+                                transform="scale(5.12,5.12)"><path
+                                  d="M5.5,7c-2.46875,0 -4.48828,2.01563
+                                  -4.5,4.48438c0,0 0,0.00391 0,0.00781c0,0.00391
+                                  0,0.00391 0,0.00781v27c0,2.47266 2.02734,4.5
+                                  4.5,4.5h39c2.47266,0 4.5,-2.02734
+                                  4.5,-4.5v-27c0,-0.00391 0,-0.00391
+                                  0,-0.00781c0,-0.00391 0,-0.00781
+                                  0,-0.00781c-0.01172,-2.46875 -2.03125,-4.48437
+                                  -4.5,-4.48437zM8.10156,9h33.80078l-16.90234,11.78125zM4.77344,9.11719l20.22656,14.10156l20.23047,-14.10156c1.02344,0.30859
+                                  1.76172,1.23828
+                                  1.76953,2.37109c-0.00391,0.21094
+                                  -0.21875,0.63281
+                                  -0.53125,0.97266c-0.31641,0.34375
+                                  -0.625,0.55859
+                                  -0.625,0.55859l-0.00391,0.00781l-20.83984,14.75l-20.83984,-14.75l-0.00391,-0.00781c0,0
+                                  -0.30859,-0.21484
+                                  -0.625,-0.55859c-0.3125,-0.33984
+                                  -0.52734,-0.76172
+                                  -0.53125,-0.97266c0.00781,-1.13281
+                                  0.74609,-2.0625
+                                  1.77344,-2.37109zM3,14.65234l0.00781,0.00781l0.00781,0.00391v0.00391l2.98438,2.10938v24.22266h-0.5c-1.39062,0
+                                  -2.5,-1.10937
+                                  -2.5,-2.5zM47,14.65234v23.84766c0,1.39063
+                                  -1.10937,2.5
+                                  -2.5,2.5h-0.5v-24.22266l2.98438,-2.10937v-0.00391zM8,18.19141l17,12.03125l17,-12.03125v22.80859h-34z"></path></g></g>
+                          </svg>
+                          <span>Gmail</span>
+                        </a>
+                      </li>
+
+                    </ul>
+
+                  </div>
+                  <div class="w-10/12 m-auto mt-16 space-y-6 text-center
+                    sm:text-left sm:w-5/12 sm:mt-auto">
+                    <span class="block text-gray-300">We change the way UI
+                      components librairies are used</span>
+
+                    <span class="block text-gray-300">Kerala Tourism &copy; 2023</span>
+                    <span class="flex justify-between text-white">
+                      <a href="#" class="font-semibold">Terms of Use </a>
+                      <a href="#" class="font-semibold"> Privacy Policy</a>
+                    </span>
+
+                    <span class="block text-gray-300">Need help? <a href="#"
+                        class="font-semibold text-white"> Contact Us</a></span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div aria-hidden="true" class="absolute h-full inset-0 flex
+              items-center">
+              <div aria-hidden="true" class="bg-layers bg-scale w-56 h-56 m-auto
+                blur-xl bg-gradient-to-r from-cyan-400 via-blue-500
+                to-purple-600 rounded-full md:w-[30rem] md:h-[30rem]
+                md:blur-3xl"></div>
+            </div>
+            <div aria-hidden="true" class="absolute inset-0 w-full h-full
+              bg-[#020314] opacity-80"></div>
+          </div>
+        </footer>
+
+        <!--
+            
+    Add to your stylesheet
+
+.bg-layers {
+    -webkit-animation: filter-animation 4s infinite;
+    animation: filter-animation 4s infinite;
+}
+
+.bg-scale {
+    -webkit-animation: filter-animation 8s infinite;
+    animation: filter-scale 8s infinite;
+}
+  
+@-webkit-keyframes filter-animation {
+    0% {
+      -webkit-filter: hue-rotate(0deg);
+    }
+    50% {
+      -webkit-filter: hue-rotate(45deg);
+    }
+    
+    100% {
+      -webkit-filter: hue-rotate(0deg);
+    }
+}
+  
+@keyframes filter-animation {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+    50% {
+      filter: hue-rotate(45deg);
+    }
+    100% {
+      filter: hue-rotate(0deg);
+    }
+}
+
+@keyframes filter-scale {
+    0% {
+      transform:scale(1);
+    }
+    50% {
+      transform:scale(1.4);
+    }
+    100% {
+        transform:scale(.8);
+    }
+}
+-->
+      </body>
+      <script>
+    // function Menu(e){
+    //     let list = document.querySelector('ul');
+    //     e.name === 'menu-outline' ? (e.name = 'close-outline', list.classList.add('top-[65px]') , list.classList.add('opacity-100')) : (e.name = 'menu-outline',list.classList.remove('top-[80px]') , list.classList.remove('opacity-100'))
+    // }
+</script>
+    </html>
