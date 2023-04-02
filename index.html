@@ -71,7 +71,6 @@
             text-gray-500 hover:text-fuchsia-400
             hover:bg-gray-700 hover: p-4 hover:rounded-lg
             duration-500">Contact</a></li>
-
       </ul>
     </nav> -->
     <!-- nav -->
@@ -323,7 +322,7 @@
 
               <div class="relative p-4 sm:p-6 lg:p-4 w-full">
                 <p class="text-4xl font-semibold uppercase tracking-widest
-                  text-emerald-400">
+                  text-orange-100">
                   Attukal Pongala
                 </p>
 
@@ -398,7 +397,7 @@
 
               <div class="relative p-4 sm:p-6 lg:p-4 w-60">
                 <p class="text-4xl font-semibold uppercase tracking-widest
-                  text-pink-500">
+                  text-lime-200">
                   Shivarathri
                 </p>
 
@@ -426,13 +425,13 @@
               <img
                 alt="Developer"
                 src="https://i.ytimg.com/vi/3W141G_UqXg/maxresdefault.jpg"
-                class="absolute inset-0 h-full w-100 object-cover opacity-90
+                class="absolute inset-0 h-full w-100 object-cover opacity-100
                 transition-opacity group-hover:opacity-50"
                 />
 
               <div class="relative p-4 sm:p-6 lg:p-4 w-full">
                 <p class="text-4xl font-semibold uppercase tracking-widest
-                  text-pink-500">
+                  text-teal-900">
                   Adoor Gajamela
                 </p>
 
@@ -467,6 +466,25 @@
             font-bold">Destinations</div>
           <!-- carosuel -->
           <style>
+/* width */
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track{
+    background-color: #888;
+   
+  }
+
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 145, 0);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #fffb00; 
+}
+
+
             .mySlides {display: none;}
   img {vertical-align: middle;}
   
@@ -515,11 +533,11 @@
   /* Fading animation */
   .fade {
     animation-name: fade;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
   }
   
   @keyframes fade {
-    from {opacity: .3} 
+    from {opacity: .1} 
     to {opacity: 1}
   }
   
@@ -527,23 +545,26 @@
   @media only screen and (max-width: 300px) {
     .text {font-size: 11px}
   }
+
   </style>
+
+
           <div class="slideshow-container">
 
             <div class="mySlides fade">
               <img
-                src="./public/images/caro-7.jfif"
+                src="./images/caro-7.jfif"
                 style="width:100%">
               <!-- <div class="text">Caption Text</div> -->
             </div>
 
             <div class="mySlides fade">
-              <img src="./public/images/caro-8.jfif" style="width:100%">
+              <img src="./images/caro-8.jfif" style="width:100%">
               <!-- <div class="text">Caption Two</div> -->
             </div>
 
             <div class="mySlides fade">
-              <img src="./public/images/caro-10.jfif" style="width:100%">
+              <img src="./images/caro-10.jfif" style="width:100%">
               <!-- <div class="text">Caption Three</div> -->
             </div>
 
@@ -568,27 +589,7 @@
             <span class="dot"></span>
           </div>
 
-          <script>
-  let slideIndex = 0;
-  showSlides();
-  
-  function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 4000); // Change image every 4 seconds
-  }
-  </script>
+
           <!-- styling -->
           <!-- cards -->
           <div class=" sm:flex block sm:py-0 pt-40 justify-between
@@ -1115,7 +1116,6 @@
               sm:w-7/12 md:justify-start">
               <ul class="list-disc list-inside space-y-8">
                 <!-- <li><a href="#" class="hover:text-sky-400 transition">Home</a></li>
-
                         <li><a href="#" class="hover:text-sky-400 transition">About</a></li>
                         <li><a href="#" class="hover:text-sky-400 transition">Guide</a></li>
                         <li><a href="#" class="hover:text-sky-400 transition">Blocks</a></li>
@@ -1317,12 +1317,10 @@
     <!--
             
     Add to your stylesheet
-
 .bg-layers {
     -webkit-animation: filter-animation 4s infinite;
     animation: filter-animation 4s infinite;
 }
-
 .bg-scale {
     -webkit-animation: filter-animation 8s infinite;
     animation: filter-scale 8s infinite;
@@ -1352,7 +1350,6 @@
       filter: hue-rotate(0deg);
     }
 }
-
 @keyframes filter-scale {
     0% {
       transform:scale(1);
@@ -1366,6 +1363,27 @@
 }
 -->
   </body>
+  <script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 4000); // Change image every 4 seconds
+    }
+    </script>
   <script>
     // function Menu(e){
     //     let list = document.querySelector('ul');
