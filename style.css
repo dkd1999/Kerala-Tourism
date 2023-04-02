@@ -736,6 +736,10 @@ video {
   height: 15rem;
 }
 
+.h-\[1000px\] {
+  height: 1000px;
+}
+
 .h-\[250px\] {
   height: 250px;
 }
@@ -750,10 +754,6 @@ video {
 
 .h-\[800px\] {
   height: 800px;
-}
-
-.h-auto {
-  height: auto;
 }
 
 .h-full {
@@ -1032,14 +1032,22 @@ video {
   padding: 1.25rem;
 }
 
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+.p-11 {
+  padding: 2.75rem;
+}
+
+.p-12 {
+  padding: 3rem;
 }
 
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .px-6 {
@@ -1055,6 +1063,11 @@ video {
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 
 .py-2 {
@@ -1077,9 +1090,14 @@ video {
   padding-bottom: 1rem;
 }
 
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .pb-5 {
@@ -1100,6 +1118,22 @@ video {
 
 .pt-40 {
   padding-top: 10rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
+.pb-16 {
+  padding-bottom: 4rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
 }
 
 .text-center {
@@ -1126,8 +1160,8 @@ video {
   line-height: 1;
 }
 
-.text-\[46px\] {
-  font-size: 46px;
+.text-\[49px\] {
+  font-size: 49px;
 }
 
 .text-lg {
@@ -1147,10 +1181,6 @@ video {
 
 .font-bold {
   font-weight: 700;
-}
-
-.font-medium {
-  font-weight: 500;
 }
 
 .font-normal {
@@ -1344,6 +1374,11 @@ video {
 .text-yelwsh1 {
   --tw-text-opacity: 1;
   color: rgb(254 193 0 / var(--tw-text-opacity));
+}
+
+.text-blue-600 {
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
 .antialiased {
@@ -1609,10 +1644,6 @@ video {
     width: 500px;
   }
 
-  .sm\:p-0 {
-    padding: 0px;
-  }
-
   .sm\:p-16 {
     padding: 4rem;
   }
@@ -1636,12 +1667,29 @@ video {
     padding-bottom: 1.25rem;
   }
 
+  .sm\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
   .sm\:pt-20 {
     padding-top: 5rem;
   }
 
   .sm\:pt-4 {
     padding-top: 1rem;
+  }
+
+  .sm\:pb-0 {
+    padding-bottom: 0px;
+  }
+
+  .sm\:pb-8 {
+    padding-bottom: 2rem;
+  }
+
+  .sm\:pb-10 {
+    padding-bottom: 2.5rem;
   }
 
   .sm\:text-left {
