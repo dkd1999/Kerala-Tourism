@@ -397,7 +397,7 @@
 
               <div class="relative p-4 sm:p-6 lg:p-4 w-60">
                 <p class="text-4xl font-semibold uppercase tracking-widest
-                  text-lime-200">
+                 text-lime-200">
                   Shivarathri
                 </p>
 
@@ -545,7 +545,23 @@
   @media only screen and (max-width: 300px) {
     .text {font-size: 11px}
   }
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track{
+    background-color: #888;
+   
+  }
 
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 145, 0);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #fffb00; 
+}
+            
   </style>
 
 
@@ -553,18 +569,18 @@
 
             <div class="mySlides fade">
               <img
-                src="./images/caro-7.jfif"
+                src="./public/images/caro-7.jfif"
                 style="width:100%">
               <!-- <div class="text">Caption Text</div> -->
             </div>
 
             <div class="mySlides fade">
-              <img src="./images/caro-8.jfif" style="width:100%">
+              <img src="./public/images/caro-8.jfif" style="width:100%">
               <!-- <div class="text">Caption Two</div> -->
             </div>
 
             <div class="mySlides fade">
-              <img src="./images/caro-10.jfif" style="width:100%">
+              <img src="./public/images/caro-10.jfif" style="width:100%">
               <!-- <div class="text">Caption Three</div> -->
             </div>
 
@@ -589,7 +605,7 @@
             <span class="dot"></span>
           </div>
 
-
+         
           <!-- styling -->
           <!-- cards -->
           <div class=" sm:flex block sm:py-0 pt-40 justify-between
@@ -1313,77 +1329,28 @@
           bg-[#020314] opacity-80"></div>
       </div>
     </footer>
-
-    <!--
-            
-    Add to your stylesheet
-.bg-layers {
-    -webkit-animation: filter-animation 4s infinite;
-    animation: filter-animation 4s infinite;
-}
-.bg-scale {
-    -webkit-animation: filter-animation 8s infinite;
-    animation: filter-scale 8s infinite;
-}
-  
-@-webkit-keyframes filter-animation {
-    0% {
-      -webkit-filter: hue-rotate(0deg);
-    }
-    50% {
-      -webkit-filter: hue-rotate(45deg);
-    }
-    
-    100% {
-      -webkit-filter: hue-rotate(0deg);
-    }
-}
-  
-@keyframes filter-animation {
-    0% {
-      filter: hue-rotate(0deg);
-    }
-    50% {
-      filter: hue-rotate(45deg);
-    }
-    100% {
-      filter: hue-rotate(0deg);
-    }
-}
-@keyframes filter-scale {
-    0% {
-      transform:scale(1);
-    }
-    50% {
-      transform:scale(1.4);
-    }
-    100% {
-        transform:scale(.8);
-    }
-}
--->
   </body>
-  <script>
-    let slideIndex = 0;
-    showSlides();
-    
-    function showSlides() {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {slideIndex = 1}    
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
-      setTimeout(showSlides, 4000); // Change image every 4 seconds
+ <script>
+  let slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
     }
-    </script>
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000); // Change image every 4 seconds
+  }
+  </script>
   <script>
     // function Menu(e){
     //     let list = document.querySelector('ul');
